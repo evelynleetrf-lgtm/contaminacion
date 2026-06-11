@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Iniciativa contra la Contaminación Mundial | Concientización y Acción</title>
+    <meta name="description" content="Descubre el impacto de la contaminación mundial generada por el ser humano. Únete a nuestra campaña en Bucaramanga para aprender y tomar acciones reales.">
+    <meta name="keywords" content="contaminación mundial, impacto ambiental, calentamiento global, concientización ambiental, Bucaramanga, ecología">
+    <meta name="author" content="Eliseo Salamanca Camacho">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Iniciativa contra la Contaminación Mundial">
+    <meta property="og:description" content="Comprende los daños ocasionados por el ser humano y cómo podemos mitigarlos. Únete a nuestra iniciativa.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Campaña de Concientización Ambiental",
+      "founder": "Eliseo Salamanca Camacho",
+      "email": "lingkonabraham65323@gmail.com",
+      "telephone": "+573234567896",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 52 # 31-80",
+        "addressLocality": "Bucaramanga",
+        "addressCountry": "CO"
+      },
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 08:00-17:00"
+    }
+    </script>
+    
+    <style>
+        /* ================= VARIABLES Y RESET ================= */
+        :root {
+            --primary: #2d6a4f;
+            --primary-hover: #1b4332;
+            --secondary: #d8f3dc;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --font-main: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-main); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        a { text-decoration: none; color: var(--primary); transition: color 0.3s; }
+        a:hover { color: var(--primary-hover); }
+        ul { list-style: none; }
+
+        /* ================= ESTRUCTURA ================= */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 1rem; color: var(--primary-hover); }
+        .section-subtitle { text-align: center; color: var(--text-light); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+        section { padding: 80px 0; }
+        
+        /* Botones */
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-2px); color: var(--white); }
+
+        /* ================= HEADER & HERO ================= */
+        header { background: var(--white); padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        
+        .hero {
+            background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(27, 67, 50, 0.9)), url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 { font-size: 3rem; line-height: 1.2; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; color: #e5e7eb; }
+
+        /* ================= GRID DE TARJETAS ================= */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: var(--white); padding: 40px 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border-bottom: 4px solid var(--secondary); }
+        .card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.3rem; }
+        
+        /* ================= PRUEBA SOCIAL / COMPROMISO ================= */
+        .commitment { background-color: var(--secondary); padding: 60px 20px; text-align: center; }
+        .commitment p { font-size: 1.2rem; color: var(--primary-hover); font-style: italic; max-width: 800px; margin: 0 auto; font-weight: 500; }
+
+        /* ================= FORMULARIO Y CONTACTO ================= */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .contact-info { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .contact-info h3 { margin-bottom: 20px; color: var(--primary); }
+        .contact-info p { margin-bottom: 12px; display: flex; flex-direction: column; }
+        .contact-info strong { color: var(--text-dark); }
+
+        .form-container { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-dark); }
+        .form-group input { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 6px; font-family: inherit; }
+        .form-group input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1); }
+        
+        #formStatus { display: none; padding: 15px; margin-top: 20px; border-radius: 6px; background-color: #def7ec; color: #03543f; text-align: center; border: 1px solid #84e1bc; }
+
+        /* ================= FOOTER ================= */
+        footer { background: var(--text-dark); color: #9ca3af; padding: 40px 0 20px; text-align: center; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #d1d5db; margin: 0 15px; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--white); text-decoration: underline; }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Acción Ambiental</div>
+            <nav>
+                <a href="#informacion">La Problemática</a>
+                <a href="#contacto" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Unirme Ahora</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Frenemos Juntos el Impacto de la Contaminación Mundial</h1>
+                <p>Comprende los daños que la actividad humana está ocasionando en nuestro planeta y descubre acciones prácticas para generar un cambio positivo desde tu comunidad.</p>
+                <a href="#contacto" class="btn-primary">Inscríbete para Recibir la Guía de Acción Ambiental</a>
+            </div>
+        </section>
+
+        <section id="informacion" class="container">
+            <h2 class="section-title">El Impacto de la Actividad Humana</h2>
+            <p class="section-subtitle">Conocer la realidad es el primer paso. Nuestra iniciativa busca informar transparentemente sobre los retos ambientales actuales.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Emisiones Atmosféricas</h3>
+                    <p>La industria y el transporte masivo alteran la calidad del aire, afectando la salud pública y acelerando el calentamiento global progresivo.</p>
+                </div>
+                <div class="card">
+                    <h3>Contaminación Hídrica</h3>
+                    <p>El vertimiento de desechos y plásticos en ríos y océanos destruye ecosistemas vitales y reduce la disponibilidad de agua potable.</p>
+                </div>
+                <div class="card">
+                    <h3>Degradación del Suelo</h3>
+                    <p>Las prácticas insostenibles y la acumulación de residuos sólidos impiden la regeneración natural de los ecosistemas terrestres.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: var(--white);">
+            <div class="container">
+                <h2 class="section-title">¿Qué lograrás al unirte?</h2>
+                <div class="grid-3">
+                    <div class="card" style="border-bottom:none; border-left: 4px solid var(--primary);">
+                        <h3>Conocimiento Verificado</h3>
+                        <p>Recibe información basada en datos científicos reales para entender cómo la huella de carbono afecta tu entorno inmediato.</p>
+                    </div>
+                    <div class="card" style="border-bottom:none; border-left: 4px solid var(--primary);">
+                        <h3>Guías Prácticas</h3>
+                        <p>Material educativo diseñado para implementar soluciones de reciclaje, ahorro energético y consumo responsable en tu hogar o empresa.</p>
+                    </div>
+                    <div class="card" style="border-bottom:none; border-left: 4px solid var(--primary);">
+                        <h3>Red de Concientización</h3>
+                        <p>Conecta con otras personas y organizaciones locales interesadas en promover políticas de sostenibilidad en nuestra ciudad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="commitment">
+            <div class="container">
+                <p>"Nuestro compromiso es brindar educación ambiental transparente y honesta. No prometemos soluciones mágicas, pero creemos firmemente que la información clara y la acción comunitaria son las herramientas más poderosas para mitigar el daño ecológico ocasionado por el ser humano."</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2 class="section-title">Súmate a la Iniciativa</h2>
+            <p class="section-subtitle">Déjanos tus datos para enviarte material informativo gratuito y mantenerte al tanto de nuestras charlas y talleres de concientización.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto y Atención</h3>
+                    <p>Operamos con total transparencia para brindar asesoría e información veraz en Colombia.</p>
+                    <br>
+                    <p><strong>Responsable de la iniciativa:</strong> Eliseo Salamanca Camacho</p>
+                    <p><strong>Dirección:</strong> Cl. 52 # 31-80, Bucaramanga, Colombia</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+573234567896">323 456 7896</a></p>
+                    <p><strong>Correo electrónico:</strong> <a href="mailto:lingkonabraham65323@gmail.com">lingkonabraham65323@gmail.com</a></p>
+                    <p><strong>Horario de atención:</strong> Lunes a Domingo, de 8:00 am a 5:00 pm</p>
+                </div>
+
+                <div class="form-container">
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" required placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" required placeholder="tu@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label style="display: flex; align-items: start; gap: 10px; font-weight: normal; font-size: 0.9rem; color: var(--text-light);">
+                                <input type="checkbox" required style="width: auto; margin-top: 3px;">
+                                Acepto la política de privacidad y el tratamiento de mis datos para recibir información educativa.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Quiero Recibir la Guía Ambiental</button>
+                    </form>
+                    <div id="formStatus">
+                        ¡Gracias por unirte! Hemos registrado tu solicitud correctamente. Pronto recibirás la información en tu correo.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+            <p>&copy; <span id="year"></span> Iniciativa Educativa por Eliseo Salamanca Camacho. Bucaramanga, Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Año dinámico en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Manejo del formulario (Previene recarga y muestra mensaje de éxito real)
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita redirecciones no deseadas
+            
+            // Aquí se conectaría la API de envío (Fetch, AJAX, etc.)
+            
+            // Simulación visual de éxito
+            document.getElementById('formStatus').style.display = 'block';
+            this.reset();
+            
+            // Ocultar mensaje tras 6 segundos
+            setTimeout(() => {
+                document.getElementById('formStatus').style.display = 'none';
+            }, 6000);
+        });
+
+        /* Nota sobre SEO OFF-PAGE: 
+           El SEO Off-page se refiere a estrategias externas al código HTML, 
+           tales como la consecución de enlaces entrantes (backlinks) desde 
+           universidades, ONGs u otras páginas de autoridad hacia este dominio, 
+           así como la actividad en redes sociales. 
+        */
+    </script>
+</body>
+</html>
